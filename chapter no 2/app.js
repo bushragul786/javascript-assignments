@@ -89,4 +89,4 @@ alert(heart)
     document.write(heart + "<br>");
 
 // show in browser on page
- document.write("-- END -- <br>");
+ document.write(" -- END -- <br>");
