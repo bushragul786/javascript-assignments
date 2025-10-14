@@ -4,23 +4,25 @@
 //Answer
 
 //inputs for first and last name using prompt
-// let firstName = prompt("Enter your first  name");
-// let lastName = prompt("Enter your last name");
+ let firstName = prompt("Enter your first  name");
+ let lastName = prompt("Enter your last name");
 
 //merge them in a new variable
-// let fullName = firstName + " " + lastName;
+ let fullName = firstName + " " + lastName;
 
-// alert("Hello " + fullName + "! Welcome!😊");
+ alert("Hello " + fullName + "! Welcome!😊");
 
 //Question no 2
 //Answer
 
 // // take user input
-// let mobileModel = prompt("Enter your favourite mobile phone model:");
+ let mobileModel = prompt("Enter your favourite mobile phone model:");
 
  //Show in browser
-// document.write(`Your  favourite mobile Model is ${mobileModel} <br>`);
-// document.write(`Lenght of your input is:${mobileModel.length} <br><br>`);
+ 
+document.write(`<h1>--mobileModel  -- </h1>  `);
+ document.write(`Your  favourite mobile Model is ${mobileModel} <br>`);
+ document.write(`Lenght of your input is:${mobileModel.length} <br><br>`);
 
 
 
@@ -34,7 +36,9 @@ let country = "Pakistani";
 let index = country.indexOf("n")
 
 // display result
- document.write(`<strong>String:</strong>${country} <br>`);
+
+document.write(`<h1>--Index of n  -- </h1>  `);
+ document.write(`<strong>String: </strong>${country} <br>`);
  document.write(`Index of n: ${index} <br><br>`)
 
 //Question no 4
@@ -47,6 +51,8 @@ let word = "Hello World";
 let lastIndex = word.lastIndexOf("l");
 
 // display result
+
+document.write(`<h1>--last Index of l  -- </h1>  `);
 document.write(`<strong>String:</strong>${word} <br>`);
  document.write(`Last Index of l: ${lastIndex} <br><br>`);
 
@@ -60,6 +66,8 @@ let text = "Pakistani";
 let char = text.charAt(3);
 
 // display result
+
+document.write(`<h1>-- character at 3rd index -- </h1>  `);
 document.write(`<strong>String:</strong>${text} <br>`);
  document.write(`Character at Index 3: ${char} <br><br>`);
 
@@ -68,13 +76,13 @@ document.write(`<strong>String:</strong>${text} <br>`);
 //Answer
 
 //inputs for first and last name using prompt
-// let firstName1 = prompt("Enter your first  name");
-// let lastName2 = prompt("Enter your last name");
+ let firstName1 = prompt("Enter your first  name");
+ let lastName2 = prompt("Enter your last name");
 
 // Merge them using string concat() method.
-// let fullName12 = firstName1.concat ("", lastName2 ); 
+ let fullName12 = firstName1.concat ("", lastName2 ); 
 
-// alert("Hello " + fullName12 + "! Welcome! 😊"  );
+ alert("Hello " + fullName12 + "! Welcome! 😊"  );
 
 //Question no 7
 //7. Write a program to replace the “Hyder” to “Islam” in the word “Hyderabad” and display the result in your browser.
@@ -84,6 +92,7 @@ let city = "Hyderabad";
 
 let newCity = city.replace("Hyder" , "Islam" );
 
+document.write(`<h1>-- Replace the "Hyder" to "Islam" -- </h1>  `);
 document.write(`City : ${city} <br>`);
 document.write(`After replacment :${newCity} <br><br>`);
 
@@ -94,6 +103,8 @@ document.write(`After replacment :${newCity} <br><br>`);
  let message = "Ali and Sami are best friends. They play cricket and football together.";
 
  let newMessage = message.replace(/and/g, "&");
+
+ document.write(`<h1>-- replace "and" to "&" -- </h1>  `);
  document.write(`<h2>${message}</h2>`);
  document.write(`After replacement of "and" : ${newMessage} <br> <br>`);
 
@@ -108,6 +119,8 @@ document.write(`After replacment :${newCity} <br><br>`);
  let num = Number(strNumber);
 
  // display values and types
+
+ document.write(`<h1>-- Values ans Type -- </h1>  `);
  document.write(`Value: ${strNumber} <br>`);
  document.write(`Type: ${typeof strNumber} <br>`);
  document.write(`Value: ${num} <br>`);
@@ -124,6 +137,8 @@ let userInput = prompt("Enter any word:");
 let upperCaseInput = userInput.toUpperCase();
 
 // display result
+
+document.write(`<h1>-- In capital Letters -- </h1>  `);
 document.write("User Input: " + userInput + "<br>");
 document.write("Upper Case: " + upperCaseInput  + "<br>" );
 
@@ -138,8 +153,10 @@ let user = prompt("Enter any word:");
 let titleCase = user.charAt(0).toUpperCase() + user.slice(1).toLowerCase();
 
 // display result
-document.write("User Input: " + userInput + "<br>");
-document.write("Title Case: " + titleCase +"<br>");
+
+document.write(`<h1>-- Title case -- </h1>  `);
+document.write("User Input: " + user + "<br>");
+document.write("Title Case: " + titleCase +"<br> <br>");
 
 //Question no 12
 //12. Write a program that converts the variable num tostring.var num = 35.36 ;Remove the dot to display “3536” display in your browser.
@@ -260,4 +277,59 @@ if( hasLetter && hasNumber){
 else{
 alert("Password must contain both alphabets and numbers.");
 }
+} 
+
+//Question no 16
+//16. Write a program to convert the following string to an
+//Answer
+
+let university = "University of Karachi";
+
+// display each element on a new line
+let universityArray = university.split("");
+
+// display each element on a new line
+
+document.write(`<h1>--"University of Karachi" -- </h1>  `);
+for(let i = 0 ; i < universityArray.length ; i++){
+  document.write(`${universityArray[i]}<br>`);
 }
+
+//Question no 17
+//17. Write a program to display the last character of a user input.
+
+
+let character = prompt("Enter any word:");
+let lastChar = character.charAt(character.length - 1);
+
+//show in browser
+document.write(`<h1>--Last character of user Input -- </h1>  `);
+document.write("User input: " + character + "<br>");
+document.write("Last character: " + lastChar);
+
+
+//Question no 18
+//18. You have a string “The quick brown fox jumps over the lazy dog”. Write a program to count number of occurrences of word “the” in given string.
+//Answe
+
+let sentence = "The quick brown fox jumps over the lazy dog";
+
+// convert to lowercase (so 'The' and 'the' both match)
+let lowerSentence = sentence.toLowerCase();
+
+// split text by word "the"
+let splitSentence = lowerSentence.split("the");
+
+// number of occurrences = (length - 1)
+let count = splitSentence.length -1;
+
+
+// show result
+
+document.write(`<h1>--Sentence -- </h1>  `);
+document.write("Text: " + sentence + "<br>");
+document.write("Number of occurrences of 'the': " + count);
+
+
+
+document.write(`<center><h1>-- END -- </h1>  `);
