@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Signup Form</h2>
+    
+<form id="signupForm">
+    <label >Name:</label><br>
+
+    <input type="text" id="username" name="name" required><br><br>
+
+      <label>Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+  <label>Password:</label><br>
+  <input type="password" id="password" name="password" required><br><br>
+  <button type="submit">Signup</button>
+</form>
+
+<h3>Form Data:</h3>
+<div id="result"></div>
+
+
+<h2>Items Details</h2>
+<p id="text"> 
+     This is a beautiful mobile with amazing performance and great camera quality.
+  <span id="moreText" style="display:none;">
+    It comes with 8GB RAM, 128GB storage, fast charging support, and a long-lasting battery.
+    Perfect for gaming and photography lovers!
+  </span>
+  <button id="btn">Read More</button>
+
+</p>
+<!-- //student table -->
+
+<h2>Add Student</h2>
+
+<form id="studentForm">
+  <input type="text" id="name" placeholder="Enter Name" required> <br><br>
+  <input type="number" id="age" placeholder="Enter Age" required> <br><br>
+  <input type="text" id="grade" placeholder="Enter Grade" required> <br><br>
+
+  <button type="submit">Add Student</button>
+</form>
+
+<hr>
+
+<h2>Students Table</h2>
+
+<table border="1" width="70%">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Grade</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+  <tbody id="studentTable"></tbody>
+</table>
+
+<br><hr>
+
+<!-- EDIT SECTION -->
+<div id="editSection" style="display:none; border:1px solid black; padding:15px; width:300px;">
+  <h3>Edit Student</h3>
+
+  <input type="text" id="editName"><br><br>
+  <input type="number" id="editAge"><br><br>
+  <input type="text" id="editGrade"><br><br>
+
+  <button id="saveBtn">Save Changes</button>
+</div>
+
+<script src="app.js"></script>
