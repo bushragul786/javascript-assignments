@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Population Record</h2>
+    <form id="populationForm" >
+        <input type="text" id="name" placeholder="Enter your name" required><br><br>
+
+        <!-- gender -->
+         <input type="radio" name="gender" value="Male" required>Male
+      <input type="radio" name="gender" value="Female" required>Female
+    <br><br>
+    <input type="text"  id="address" placeholder="Enter Address" required><br><br>
+
+    <!-- Education -->
+     <select  id="education" required>
+        <option value="">select Education</option>
+        <option>Matric</option>
+        <option>Intermediate</option>
+        <option>Graduate</option>
+        <option>Master</option>
+
+     </select><br><br>
+
+     <!-- profession -->
+      <select id="profession">
+        <option value="">Select Profession</option>
+        <option>Student</option>
+                <option>Teacher</option>
+        <option>Docter</option>
+        <option>Engineer</option>
+      </select><br><br>
+      <button type="submit">Save Record</button>
+    </form>
+
+    <hr>
+    <h3>Save Records</h3>
+    <div id="output"></div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
